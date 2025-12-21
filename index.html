@@ -8,6 +8,58 @@
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
 <style>
+  /* NAVBAR STYLING */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #0b0b0b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 40px;
+  border-bottom: 1px solid rgba(212,175,55,0.3);
+}
+
+.nav-logo a {
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #d4af37;
+  text-decoration: none;
+}
+
+.nav-logo span {
+  color: #ffffff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 28px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #f1f1f1;
+  font-size: 0.95rem;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #d4af37;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+}
+
 :root {
   --bg: #0b0b0b;
   --gold: #c9a44c;
@@ -130,6 +182,22 @@ footer {
 </head>
 
 <body>
+<nav class="navbar">
+  <div class="nav-logo">
+    <a href="index.html">DEUSARK <span>NEXUS</span></a>
+  </div>
+
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="https://bodycoders.in" target="_blank">Body Coders</a></li>
+    <li><a href="https://arkitecturacreations.in" target="_blank">Arkitectura</a></li>
+    <li><a href="#">Arkadia Game Lab</a></li>
+    <li><a href="#">Fitness Academy</a></li>
+    <li class="social">
+      <a href="https://instagram.com/arkinvincible" target="_blank">Instagram</a>
+    </li>
+  </ul>
+</nav>
 
 <!-- HERO -->
 <section class="hero">
@@ -195,3 +263,4 @@ footer {
 
 </body>
 </html>
+
